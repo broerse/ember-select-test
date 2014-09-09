@@ -5,7 +5,7 @@ This README outlines the details of collaborating on this Ember application.
 ## Installation
 
 * `git clone` this repository
-* `cd ember-cli-blog`
+* `cd pages`
 * `npm install`
 * `bower install`
 * install couchDB from http://couchdb.apache.org/

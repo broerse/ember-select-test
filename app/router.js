@@ -1,13 +1,12 @@
 import Ember from 'ember';
 
 var Router = Ember.Router.extend({
-	location: MyappENV.locationType
+	location: PagesENV.locationType
 });
 
 Router.map(function() {
-	this.resource('about');
-	this.resource('posts', function() {
-		this.resource('post', { path: ':post_id' });
+	this.resource('pages', function() {
+		this.resource('page', { path: ':page_id' });
 	});
 });
 

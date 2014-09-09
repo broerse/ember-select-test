@@ -2,7 +2,7 @@
   "predef": {
     "document": true,
     "window": true,
-    "MyappENV": true,
+    "PagesENV": true,
     "PouchDB": true,
     "EmberPouch": true,
     "marked": true,

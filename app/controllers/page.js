@@ -12,9 +12,9 @@ export default Ember.ObjectController.extend({
 			this.get('model').save();
 		},
 		
-		deletePost: function() {
+		deletePage: function() {
       this.get('model').destroyRecord().then(function() {
-        this.get('target').transitionTo('posts');
+        this.get('target').transitionTo('pages');
       }.bind(this));
     }
 	}

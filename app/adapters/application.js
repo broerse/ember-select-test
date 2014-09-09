@@ -1,5 +1,5 @@
-var db = new PouchDB('bloggr');
-db.sync('http://localhost:5984/bloggr', {live: true});
+var db = new PouchDB('pages');
+db.sync('http://localhost:5984/pages', {live: true});
 
 export default EmberPouch.Adapter.extend({
   db: db

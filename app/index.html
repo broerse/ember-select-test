@@ -3,24 +3,24 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Myapp</title>
+		<title>Pages</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		{{BASE_TAG}}
 
 		<link rel="stylesheet" href="assets/vendor.css">
-		<link rel="stylesheet" href="assets/myapp.css">
+		<link rel="stylesheet" href="assets/pages.css">
 	</head>
 	<body>
     <script>
-      window.MyappENV = {{ENV}};
-      window.EmberENV = window.MyappENV.EmberENV;
+      window.PagesENV = {{ENV}};
+      window.EmberENV = window.PagesENV.EmberENV;
     </script>
 		<script src="assets/vendor.js"></script>
-		<script src="assets/myapp.js"></script>
+		<script src="assets/pages.js"></script>
 		<script>
-			window.Myapp = require('myapp/app')['default'].create(MyappENV.APP);
+			window.Pages = require('pages/app')['default'].create(PagesENV.APP);
 		</script>
 	</body>
 </html>
