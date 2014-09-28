@@ -9,6 +9,9 @@ Router.map(function() {
 	this.resource('pages', function() {
 		this.resource('page', { path: ':page_id' });
 	});
+	this.resource('modelnames', function() {
+		this.resource('modelname', { path: ':modelname_id' });
+	});
 });
 
 export default Router;
