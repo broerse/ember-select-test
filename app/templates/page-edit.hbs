@@ -1,5 +1,6 @@
 <p><button {{action 'deletePage'}}>Delete</button></p>
 
-<p>{{view Ember.Select content=modelname selection=mname optionValuePath="content.id" optionLabelPath="content.name"}}</p>
+<p>{{view Ember.Select content="controller.modelname" optionValuePath="content.id" optionLabelPath="content.id"}}</p>
+
 <p>{{input type="text" value=title size="60"}}</p>
 <p>{{textarea value=body cols="100" rows="4" }}</p>

@@ -1,0 +1,10 @@
+{{#if isEditing}}
+	<p><button {{action 'deleteModelname'}}>Delete</button></p>
+  <p>{{input type="text" value=name size="60"}}</p>
+	<button {{action 'doneEditing'}}>Done</button>
+{{else}}
+	<button {{action 'edit'}}>Edit</button>
+{{/if}}
+
+<h1>{{modelname}}</h1>
+

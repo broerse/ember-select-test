@@ -1,0 +1,28 @@
+<div class="container-fluid">
+	<div class="row">
+
+    <!-- List pages -->
+		<div class="col-xs-3">
+			<table class='table'>
+				<thead>
+					<tr><th>Modelnames</th></tr>
+				</thead>
+				<tbody>
+				{{#each}}
+				<tr><td>
+					{{#link-to 'modelname' this}}
+						-> {{name}}
+					{{/link-to}}
+				</td></tr>
+				{{/each}}
+				</tbody>
+			</table>
+		</div>
+
+		<!-- modelname content -->
+		<div class="col-xs-9">
+			{{outlet}}
+		</div>
+	</div>
+	<button {{action 'createModelname'}}>Create</button>
+</div>
