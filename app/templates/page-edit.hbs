@@ -1,10 +1,10 @@
 <p><button {{action 'deletePage'}}>Delete</button></p>
 
 <p>{{view Ember.Select
-  content=eligibleMnames
+  contentBinding="eligibleMnames"
   optionLabelPath="content.name"
   optionValuePath="content.id"
-  value=mname
+  selectionBinding="mname.content"
 }}</p>
 
 <p>{{input type="text" value=title size="60"}}</p>
