@@ -1,7 +1,7 @@
 <p><button {{action 'deletePage'}}>Delete</button></p>
 
 <p>{{view Ember.Select
-  contentBinding="eligibleMnames"
+  contentBinding="controllers.modelnames"
   optionLabelPath="content.name"
   optionValuePath="content.id"
   selectionBinding="mname.content"
