@@ -6,7 +6,7 @@ export default Ember.Route.extend({
 	afterModel: function (recordArray) {
     // This tells PouchDB to listen for live changes and
     // notify Ember Data when a change comes in.
-    new PouchDB('pages').changes({
+    new PouchDB('selecttest').changes({
       since: 'now',
       live: true
     }).on('change', function () {
