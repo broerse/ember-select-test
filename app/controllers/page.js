@@ -2,7 +2,9 @@ import Ember from "ember";
 export default Ember.ObjectController.extend({
 	isEditing: false,
 
-  needs: ['modelnames'],
+  modelnames: function() {
+    return this.store.find('modelname');
+  }.property(),
    
 	actions: {
 		edit: function() {
