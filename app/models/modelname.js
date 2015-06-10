@@ -1,7 +1,7 @@
 import DS from "ember-data";
+import { Model } from 'ember-pouch';
 
-var Modelname = DS.Model.extend({
-	rev: DS.attr('string'),
+var Modelname = Model.extend({
 	name: DS.attr('string', {defaultValue: ""}),
 	pages: DS.hasMany('page', {async: true})
 });

@@ -1,7 +1,7 @@
 import DS from "ember-data";
+import { Model } from 'ember-pouch';
 
-var Page = DS.Model.extend({
-	rev: DS.attr('string'),
+var Page = Model.extend({
 	title: DS.attr('string', {defaultValue: ""}),
 	date: DS.attr('date'),
 	body: DS.attr('string', {defaultValue: ""}),

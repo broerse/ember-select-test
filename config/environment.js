@@ -39,9 +39,14 @@ module.exports = function(environment) {
     ENV.APP.rootElement = '#ember-testing';
   }
 
-	if (environment === 'production') {
+  ENV.remote_couch = 'http://martinic.iriscouch.com/selecttest';
+  ENV.local_couch = 'selecttest';
+  if (environment === 'production') {
     ENV.baseURL = '/selecttest/';
-	}
+  }
+  ENV.contentSecurityPolicy = {
+    'connect-src': "'self' " + ENV.remote_couch.substring(0, ENV.remote_couch.indexOf('/', 9))
+  };
 
 	return ENV;
 };
