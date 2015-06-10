@@ -3,7 +3,7 @@ import { Model } from 'ember-pouch';
 
 var Modelname = Model.extend({
 	name: DS.attr('string', {defaultValue: ""}),
-	pages: DS.hasMany('page', {async: true})
+	pages: DS.hasMany('page', {serialize: true})
 });
 
 export default Modelname;
