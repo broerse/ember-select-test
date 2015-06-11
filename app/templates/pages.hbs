@@ -8,10 +8,10 @@
 					<tr><th>Recent Pages</th></tr>
 				</thead>
 				<tbody>
-				{{#each}}
+				{{#each model as |page|}}
 				<tr><td>
-					{{#link-to 'page' this}}
-						-> {{title}}
+					{{#link-to 'page' page}}
+						-> {{page.title}}
 					{{/link-to}}
 				</td></tr>
 				{{/each}}

@@ -8,10 +8,10 @@
 					<tr><th>Modelnames</th></tr>
 				</thead>
 				<tbody>
-				{{#each}}
+				{{#each model as |modelname|}}
 				<tr><td>
-					{{#link-to 'modelname' this}}
-						-> {{name}}
+					{{#link-to 'modelname' modelname}}
+						-> {{modelname.name}}
 					{{/link-to}}
 				</td></tr>
 				{{/each}}
