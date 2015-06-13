@@ -1,11 +1,11 @@
 <p><button {{action 'deletePage'}}>Delete</button></p>
 
-<p>{{view "select"
-       content=modelname
+<p>{{ember-selectize
+       content=controller.modelnames
        optionValuePath="content.id"
        optionLabelPath="content.name"
-       value=model.mname}}
+       selection=model.mname}}
 </p>
 
 <p>{{input type="text" value=model.title size="60"}}</p>
-<p>{{textarea value=body cols="100" rows="4" }}</p>
+<p>{{textarea value=model.body cols="100" rows="4" }}</p>
